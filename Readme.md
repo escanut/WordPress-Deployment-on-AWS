@@ -14,6 +14,9 @@ This project implements a secure, scalable WordPress hosting solution on AWS usi
 
 ## Architecture
 
+![Aws Infrastructure Architecture](screenshots/aws_architecture.png)
+*(Architecture Diagram)*
+
 ### Infrastructure Components
 
 **Networking**
@@ -129,22 +132,6 @@ Two critical alarms configured with SNS email notifications:
 
 ---
 
-## Deployment Architecture
-
-### Network Flow
-```
-Internet
-    ↓
-Internet Gateway
-    ↓
-Public Subnet (10.0.1.0/24)
-    ↓
-EC2 Instance (WordPress + Apache)
-    ↓
-Private Subnets (10.0.10.0/24, 10.0.11.0/24)
-    ↓
-RDS MySQL Database
-```
 
 ### Security Layers
 1. **Network Layer:** VPC segmentation, security groups
