@@ -178,7 +178,7 @@ Two critical alarms configured with SNS email notifications:
 ## Key Learnings
 
 **Let's Encrypt Certificate Limitations**
-AWS public DNS names are blocked by Let's Encrypt's certificate issuance policy (implemented late 2025). This necessitates either using self-signed certificates for demonstration purposes or configuring a custom domain for production deployments with valid SSL certificates.
+AWS public DNS names are blocked by Let's Encrypt's certificate issuance policy. This necessitates either using self-signed certificates for demonstration purposes or configuring a custom domain for production deployments with valid SSL certificates.
 
 **Security Group Best Practices**
 Using security group IDs as traffic sources (rather than IP addresses) ensures connectivity persists through infrastructure changes such as Elastic IP associations or instance replacements.
